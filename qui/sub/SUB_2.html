@@ -13,11 +13,29 @@
 </head>
 
 <body>
+   
     <header class="header bg-primary">
         <div class="left-title">M.C.Q</div>
         <div class="right-title">Total Questions: <span id="tque"></span></div>
         <div class="clearfix"></div>
     </header>
+<!----4344-->
+    <div class="container">
+        <div class="body">
+            <div id="hour">0h</div>
+            <div id="minute">0m</div>
+            <div id="second">0s</div>
+        </div>
+        <div class="controls">
+            <button onclick="ToggleTimer()" id="start-btn"> Start </button>
+            <button onclick="ClearTimer()" id="reset-btn"> Reset </button>
+        </div>
+    </div>
+    <button class="fullscreen-button" onclick="ToggleFullscreen()" title="Toggles Fullscreen">
+        <i class="material-icons" id="fullscreen-icon">fullscreen</i>
+    </button>
+
+    <!--end-->
     <div class="content">
         <div class="container-fluid">
             <div class="row">
@@ -44,3 +62,4 @@
 </body>
 
 </html>
+
